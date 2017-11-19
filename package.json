@@ -1,0 +1,64 @@
+{
+  "name": "@adexchange/aeg-redshift",
+  "version": "0.0.1",
+  "description": "Redshift client",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "Ad Exchange Group",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdExchangeGrp/aeg-redshift.git"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "mocha --recursive --compilers ts:ts-node/register test/**/*.ts",
+    "test:coverage": "nyc npm run test",
+    "lint": "tslint src/**/*.ts",
+    "lint:watch": "npm run lint && onchange \"**/*.ts\" \"tslint.json\" -- npm run lint",
+    "compile": "tsc",
+    "compile:watch": "npm run compile -- --watch",
+    "dev": "npm run compile:watch",
+    "build:test": "mocha --recursive --compilers ts:ts-node/register --reporter mocha-junit-reporter test/unit/**/*.ts",
+    "build:coverage": "nyc npm run build:test"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ],
+    "all": true
+  },
+  "devDependencies": {
+    "@adexchange/aeg-logger": "0.0.145",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^6.0.0",
+    "@types/pg": "^6.1.42",
+    "bluebird": "^3.5.0",
+    "config": "^1.26.2",
+    "mocha": "^3.2.0",
+    "mocha-junit-reporter": "^1.13.0",
+    "nyc": "^11.0.3",
+    "onchange": "^3.2.1",
+    "should": "^11.2.0",
+    "ts-node": "^3.2.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "@adexchange/aeg-xray": "0.0.53",
+    "pg": "^6.4.1"
+  },
+  "engine": "node >= 6.10.0"
+}
