@@ -1,7 +1,7 @@
 import * as pg from 'pg';
 import { Redshift } from './redshift';
 import { Client, QueryResult } from 'pg';
-import Segment from '@adexchange/aeg-xray/lib/segment';
+import Segment from '@push_innovation/aeg-xray/lib/segment';
 import queryWrapper from './query-wrapper';
 import { IQueryOptions } from './types';
 
