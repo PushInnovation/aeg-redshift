@@ -1,6 +1,6 @@
 import { Client, ClientConfig, Pool, PoolConfig, QueryResult } from 'pg';
 import * as pgTypes from 'pg-types';
-import Segment from '@adexchange/aeg-xray/lib/segment';
+import Segment from '@push_innovation/aeg-xray/lib/segment';
 
 export interface IRedshiftClient {
 	Pool: new (options: PoolConfig) => Pool;

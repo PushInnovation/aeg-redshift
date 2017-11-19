@@ -1,6 +1,6 @@
 import * as should from 'should';
-import { Segment, XrayLogger, samplingRules } from '@adexchange/aeg-xray';
-import logger from '@adexchange/aeg-logger';
+import { Segment, XrayLogger, samplingRules } from '@push_innovation/aeg-xray';
+import logger from '@push_innovation/aeg-logger';
 import * as BBPromise from 'bluebird';
 import RedshiftPooled, { IRedshiftPooledOptions } from '../../src/redshift-pooled';
 import * as path from 'path';

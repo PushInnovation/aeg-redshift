@@ -1,5 +1,5 @@
 {
-  "name": "@adexchange/aeg-redshift",
+  "name": "@push_innovation/aeg-redshift",
   "version": "0.0.1",
   "description": "Redshift client",
   "main": "lib/index.js",
@@ -7,7 +7,7 @@
   "author": "Ad Exchange Group",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdExchangeGrp/aeg-redshift.git"
+    "url": "https://github.com/PushInnovation/aeg-redshift.git"
   },
   "license": "UNLICENSED",
   "scripts": {
@@ -41,7 +41,7 @@
     "all": true
   },
   "devDependencies": {
-    "@adexchange/aeg-logger": "0.0.145",
+    "@push_innovation/aeg-logger": "^0.0.12",
     "@types/mocha": "^2.2.41",
     "@types/node": "^6.0.0",
     "@types/pg": "^6.1.42",
@@ -57,7 +57,7 @@
     "typescript": "^2.4.1"
   },
   "dependencies": {
-    "@adexchange/aeg-xray": "0.0.53",
+    "@push_innovation/aeg-xray": "^0.0.54",
     "pg": "^6.4.1"
   },
   "engine": "node >= 6.10.0"
